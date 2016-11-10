@@ -6,7 +6,7 @@ module Plugins
         plugin.use_class 'app/models/votes/clicker'
         plugin.use_view_path 'app/views', controller: ThreadMailer
         plugin.register_proposal_kind :clicker,
-          expanded:        :clicker_expanded,
+          proposal:        :clicker_expanded,
           vote_form:       :clicker_vote_field,
           preview_large:   :clicker_preview_large,
           preview_small:   :clicker_preview_small
