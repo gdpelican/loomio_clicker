@@ -1,2 +1,7 @@
 .clicker-expanded
-  This could be anything we wanted it to be!
+  %button{ng-click: "submit()", ng-if: "!yourVote()"}
+    Vote!
+  .number-of-votes
+    {{ proposal.votersCount }} people have voted.
+  .have-you-voted{ng-if: "yourVote()"}
+    (You voted!)
